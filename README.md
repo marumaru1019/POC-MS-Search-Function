@@ -49,7 +49,7 @@ git clone https://github.com/marumaru1019/POC-MS-Search-Function
     ```
 1. Azure に関数アプリを作成してください。関数アプリ名は任意のものを指定してください。
     ```
-    az functionapp create --resource-group AzureFunctionsQuickstart-rg --consumption-plan-location <リージョン> --runtime dotnet-isolated --functions-version 4 --name <関数アプリ名> --storage-account <ストレージアカウント名>
+    az functionapp create --resource-group <リソースグループ名> --consumption-plan-location <リージョン> --runtime dotnet-isolated --functions-version 4 --name <関数アプリ名> --storage-account <ストレージアカウント名>
     ```
 1. 作成した関数アプリに、ClientId、TenantId、ClientSecret を環境変数として設定してください。クライアント ID、テナント ID、クライアント シークレットは、[ユーザー認証用のアプリケーションの登録](#ユーザー認証用のアプリケーションの登録)で作成したものを使用してください。
     ```
